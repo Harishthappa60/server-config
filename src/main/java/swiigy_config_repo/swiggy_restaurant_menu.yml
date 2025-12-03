@@ -1,0 +1,18 @@
+server:
+  port: 8085
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@//localhost:1521/XE
+    username: SYSTEM
+    password: SYSTEM
+    driver-class-name: oracle.jdbc.OracleDriver
+eureka:
+  client:
+    service url:
+      defaultZone: http://localhost:8881/eureka
+user:
+  service:
+    message: "User service Config loaded from server config"
+logging:
+  level:
+    root: INFO
