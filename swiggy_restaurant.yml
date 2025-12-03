@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 8082
 spring:
   datasource:
     url: jdbc:oracle:thin:@//localhost:1521/XE
@@ -8,7 +8,7 @@ spring:
     driver-class-name: oracle.jdbc.OracleDriver
 eureka:
   client:
-    service url:
+    service uri:
       defaultZone: http://localhost:8881/eureka
 user:
   service:
